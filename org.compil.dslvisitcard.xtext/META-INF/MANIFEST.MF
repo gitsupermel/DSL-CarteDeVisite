@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.compil.dslvisitcard.xtext
+Bundle-ManifestVersion: 2
+Bundle-Name: org.compil.dslvisitcard.xtext
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.compil.dslvisitcard.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.compil.dslvisitcard.dvc.generator,
+ org.compil.dslvisitcard.dvc.vcard,
+ org.compil.dslvisitcard.dvc.parser.antlr,
+ org.compil.dslvisitcard.dvc.vcard.util,
+ org.compil.dslvisitcard.dvc.parser.antlr.internal,
+ org.compil.dslvisitcard.dvc.validation,
+ org.compil.dslvisitcard.dvc.scoping,
+ org.compil.dslvisitcard.dvc.services,
+ org.compil.dslvisitcard.dvc.serializer,
+ org.compil.dslvisitcard.dvc.vcard.impl,
+ org.compil.dslvisitcard.dvc
+Import-Package: org.apache.log4j

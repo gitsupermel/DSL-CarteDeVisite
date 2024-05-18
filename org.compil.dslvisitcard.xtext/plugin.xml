@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package
+			uri = "http://www.compil.org/dslvisitcard/dvc/Vcard"
+			class = "org.compil.dslvisitcard.dvc.vcard.VcardPackage"
+			genModel = "model/generated/Vcard.genmodel" />
+	</extension>
+</plugin>

@@ -1,0 +1,15 @@
+grammar org.compil.dslvisitcard.dvc.Vcard with org.eclipse.xtext.common.Terminals
+
+generate vcard "http://www.compil.org/dslvisitcard/dvc/Vcard"
+
+Model:
+    cards+=Card*;
+
+Card:
+    'Card' '{'
+        'Name:' name=STRING
+        'Title:' title=STRING
+        'Company:' company=STRING
+        'Email:' email=STRING
+        'Phone:' phone=STRING
+    '}';
